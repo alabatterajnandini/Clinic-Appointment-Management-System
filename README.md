@@ -368,6 +368,8 @@ java -cp out Main
 
 **Name:** Alabatte Rajnandini Raju
 
+**Registration Number:** 25BAI10125
+
 **Project Title:** Clinic Appointment Management System
 
 **Subject:** Introduction to Java

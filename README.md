@@ -1,707 +1,376 @@
 # Clinic Appointment Management System
-# 1. Project Title
 
-Clinic Appointment Management System
+A console-based Java application for managing patients, doctors, appointments, and billing activities in a clinic.
 
-## 2. Project Overview
+## 1. Project Overview
 
-The Clinic Appointment Management System is a console-based application developed using Java. The application is designed to manage basic clinic activities such as patient records, doctor records, appointments, bills, and reports.
+The **Clinic Appointment Management System** is a menu-driven console application developed using Core Java. It helps manage basic clinic activities such as adding patients, adding doctors, booking appointments, viewing records, and generating bills.
 
-The system provides a simple menu-driven interface through which the user can perform different operations. The system also saves the entered data in a local file so that the data can be loaded when the application is started again.
+The project demonstrates the practical use of Object-Oriented Programming concepts, collections, exception handling, file handling, and Java Date and Time API.
 
-The project is developed as part of the Introduction to Java course.
+The application runs through PowerShell, Windows Terminal, or Command Prompt. It does not require a browser or an external database.
 
-## 3. Problem Statement
+## 2. Problem Statement
 
-Managing the patient details, doctor information, appointments and billing manually can be time-consuming and prone to errors.
+Managing clinic records manually can be time-consuming and may lead to errors. Patient details, doctor details, appointments, and billing information need to be maintained in an organized way.
 
-The purpose of the project is to develop a simple Java based application that helps organize the basic clinic information and makes the basic operations easier.
+This project provides a simple Java-based solution for managing basic clinic operations through a menu-driven console application.
 
-## 4. Objectives
+## 3. Objectives
 
-The main objectives of the project are as follows:
+The main objectives of this project are:
 
-To develop a menu-driven application using Java.
+* To develop a menu-driven Java application.
+* To manage patient information.
+* To manage doctor information.
+* To book clinic appointments.
+* To view appointment records.
+* To generate patient bills.
+* To demonstrate Object-Oriented Programming concepts.
+* To use collections for storing records.
+* To handle invalid input using exception handling.
+* To save and load data using file handling.
+* To provide a simple and user-friendly console interface.
 
-To manage patient information.
+## 4. Features
 
-To manage doctor information.
+The application provides the following features:
 
-To book and cancel appointments.
+1. Add Patient
+2. View Patients
+3. Add Doctor
+4. View Doctors
+5. Book Appointment
+6. View Appointments
+7. Generate Bill
+8. Exit the Application
 
-To avoid double-booking of a doctor at the same date and time.
+### Main Features Description
 
-To generate and display patient bills.
+* **Patient Management:** Add and view patient information.
+* **Doctor Management:** Add and view doctor information.
+* **Appointment Management:** Book and view appointments.
+* **Billing Management:** Generate and display patient bills.
+* **Data Storage:** Store application data locally using file handling.
+* **Menu-Driven Interface:** Perform operations by selecting menu options.
+* **Input Validation:** Handle invalid input using exception handling.
 
-To display basic clinic reports.
+## 5. Technologies Used
 
-To demonstrate object-oriented programming concepts.
+* **Programming Language:** Java
+* **Java Version:** JDK 17 or above recommended
+* **Application Type:** Console-based application
+* **Development Environment:** PowerShell, Windows Terminal, or Command Prompt
+* **Storage:** Local file storage
+* **Data File:** `clinic_data.dat`
+* **External Database:** Not required
+* **External Libraries:** Not required
 
-To handle invalid input using exception handling.
+## 6. Java Concepts Used
 
-To save and load records using file handling.
+The following Java concepts are used in this project:
 
-To develop a project that can be executed through the command line.
+* Classes and Objects
+* Constructors
+* Encapsulation
+* Methods
+* ArrayList
+* Object-Oriented Programming
+* Exception Handling
+* Method Overriding
+* File Handling
+* ObjectOutputStream
+* ObjectInputStream
+* LocalDate
+* LocalTime
+* Menu-driven programming
 
-## 5. Features
+## 7. Project Structure
 
-### Patient Management
-
-Add a new patient.
-
-View all patients.
-
-Search a patient by ID or name.
-
-Update patient phone number and health problem.
-
-Delete a patient record.
-
-### Doctor Management
-
-Add a new doctor.
-
-View all doctors.
-
-Search a doctor by ID, name, or specialization.
-
-Delete a doctor record.
-
-### Appointment Management
-
-Book an appointment.
-
-View all appointments.
-
-Cancel an appointment.
-
-Check whether a doctor is already booked.
-
-Avoid double-booking for the same doctor, date, and time.
-
-### Billing Management
-
-Generate a bill for a patient.
-
-Enter consultation fees.
-
-Enter medicine fees.
-
-Enter test fees.
-
-Calculate the total bill amount.
-
-View all generated bills.
-
-### Reports
-
-Display total patients.
-
-Display total doctors.
-
-Display total appointments.
-
-Display total bills.
-
-Display booked appointments.
-
-Display cancelled appointments.
-
-### Data Storage
-
-Save records in a local file.
-
-Load saved records when the application starts.
-
-Automatically save data after important operations and before exit.
-
-## 6. Technologies Used
-
-Programming Language: Java
-
-Application Type: Console-based application
-
-Development Environment: PowerShell / Command Prompt
-
-Java Version: JDK 17 or above recommended
-
-Data Storage: Local serialized file
-
-Data File: `clinic_data.dat`
-
-## 7. Java Concepts Used
-
-The following Java concepts are used in the project:
-
-Classes and Objects
-
-Constructors
-
-Encapsulation
-
-Private data members
-
-Getter and setter methods
-
-ArrayList
-
-Method overriding
-
-Exception handling
-
-File handling
-
-Object serialization
-
-LocalDate
-
-LocalTime
-
-Switch statements
-
-Loops
-
-Conditional statements
-
-Menu-driven programming
-
-## 8. Project Modules
-The project contains the following modules:
-
-1. Patient Management
-
-2. Doctor Management
-
-3. Appointment Management
-
-4. Billing Management
-
-5. Reports
-
-6. Data Storage
-
-## 9. Project Structure
+The project files are arranged as follows:
 
 ```text
-
-Clinic-Appointment-Management-System/
-
+Clinic-Appointment-Management-System
 │
-
+├── Appointment.java
+├── Bill.java
+├── Doctor.java
+├── Main.java
+├── Patient.java
 ├── README.md
-
-│
-
-├── src/
-
-│ ├── Main.java
-
-│ ├── Patient.java
-
-│ ├── Doctor.java
-
-│ ├── Appointment.java
-
-│ └── Bill.java
-
-│
-
-├── out/
-
-│ └── Generated after compilation
-
-│
-
-├── clinic_data.dat
-
-│ └── Generated automatically after saving data
-
-│
-
-└── screenshots/
-
-├── 1-main-menu.png
-
-├── 2-patient-doctor.png
-
-├── 3-appointment-billing.png
-
-└── 4-reports.png
-
+└── .gitignore
 ```
-## 10. Description of Important Files
+
+## 8. File Description
 
 ### Main.java
 
-This is the main file of the application. It displays the menu and controls all the modules.
+This is the main class of the application. It displays the menu and controls the execution of different operations.
 
 ### Patient.java
 
-This class stores patient details such as:
-
-Patient ID
-
-Name
-
-Age
-
-Gender
-
-Phone number
-
-Health problem
+This class represents patient details and stores information related to patients.
 
 ### Doctor.java
 
-This class stores doctor details such as:
-
-Doctor ID
-
-Name
-
-Specialization
-
-Phone number
+This class represents doctor details and stores information related to doctors.
 
 ### Appointment.java
 
-This class stores appointment details such as:
-
-Appointment ID
-
-Patient ID
-
-Doctor ID
-
-Appointment date
-
-Appointment time
-
-Appointment status
+This class represents appointment details such as patient, doctor, date, and time.
 
 ### Bill.java
 
-This class stores billing details such as:
+This class is used to calculate and display billing information.
 
-Bill ID
+### README.md
 
-Patient ID
+This file contains the project description, requirements, setup instructions, compilation commands, execution commands, features, and testing information.
 
-Consultation fee
+## 9. System Requirements
 
-Medicine fee
+To run this project, the following requirements are needed:
 
-Test fee
+* Windows operating system
+* Java Development Kit installed
+* JDK 17 or above recommended
+* PowerShell, Windows Terminal, or Command Prompt
+* Basic knowledge of running Java programs
 
-Total amount
+## 10. Installation Instructions
 
-## 11. System Working
+### Step 1: Download the Repository
 
-The application works in the following way:
+Download the project ZIP file from GitHub or clone the repository.
 
+### Step 2: Extract the Project
 
+If the project is downloaded as a ZIP file, extract it to a suitable location.
 
-1. The application starts.
+### Step 3: Open the Project Folder
 
-2. Previously saved data is loaded if the data file exists.
-
-3. The main menu is displayed.
-
-4. The user selects an operation.
-
-5. The selected module is opened.
-
-6. The user enters the required information.
-
-7. The system validates the input.
-
-8. The operation is performed.
-
-9. The result is displayed.
-
-10. Data is saved after important operations.
-
-11. The application closes when the user selects Exit.
-
-## 12. Requirements
-
-### Hardware Requirements
-
-Computer or laptop
-
-Keyboard
-
-Basic storage space for Java files and project data
-
-### Software Requirements
-JDK 17 or above
-
-PowerShell or Command Prompt
-
-Text editor or Java-supported IDE
-
-Git and GitHub account for project submission
-
-## 13. Installation Instructions
-### Step 1: Install Java
-Install JDK 17 or above.
-
-Check whether Java is installed:
-
-```powershell
-
-java -version
-
-```
-Check whether the Java compiler is installed:
-
-```powershell
-
-javac -version
-
-```
-
-### Step 2: Open the Project Folder
-Open PowerShell inside the project folder.
-Example:
-```text
-
-Clinic-Appointment-Management-System
-
-```
-Make sure the folder contains:
+Open the folder containing the following files:
 
 ```text
-
+Appointment.java
+Bill.java
+Doctor.java
+Main.java
+Patient.java
 README.md
-
-src
-
 ```
 
-## 14. Compilation Instructions
+The Java files must be present in the same project root folder.
+
+## 11. How to Open the Project in PowerShell
+
+Open PowerShell or Windows Terminal.
+
+Navigate to the project folder using the following command:
+
+```powershell
+cd "C:\Users\YourName\Downloads\Clinic-Appointment-Management-System\Clinic-Appointment-Management-System"
+```
+
+Replace `YourName` with your Windows username.
+
+If the project is stored in another location, use that folder path instead.
+
+## 12. How to Compile and Run the Project
+
+The project is a console-based Java application. It can be compiled and executed using PowerShell or Windows Terminal.
 
 ### Step 1: Open PowerShell or Windows Terminal
 
 Open PowerShell or Windows Terminal on your computer.
 
-### Step 2: Navigate to the Project Folder
+### Step 2: Navigate to the Project Root Folder
 
-Open the folder where the project is extracted.
+Make sure the terminal is opened in the folder containing all Java files.
 
 Example:
 
 ```powershell
 cd "C:\Users\YourName\Downloads\Clinic-Appointment-Management-System\Clinic-Appointment-Management-System"
+```
 
-### 15. Execution Instructions
+### Step 3: Compile the Java Files
+
+Run the following command:
+
+```powershell
+javac -d out *.java
+```
+
+This command compiles all Java source files in the project root folder and stores the generated `.class` files inside the `out` folder.
+
+If the compilation is successful, no error message will be displayed.
+
+### Step 4: Run the Application
 
 After successful compilation, run:
 
 ```powershell
-
 java -cp out Main
-
 ```
-The application will display the main menu.
 
-## 16. Application Menu
+This command starts the application by executing the `Main` class from the `out` folder.
+
+### Step 5: Use the Application
+
+The main menu will be displayed in the terminal.
+
+Enter the number of the required option and follow the instructions shown on the screen.
+
+## 13. Application Menu
+
+The application displays the following menu:
 
 ```text
-
-CLINIC APPOINTMENT MANAGEMENT SYSTEM
-
-1. Patient Management
-
-2. Doctor Management
-
-3. Appointment Management
-
-4. Billing Management
-
-5. Reports
-
-6. Save Data
-
-0. Exit
-
+1. Add Patient
+2. View Patients
+3. Add Doctor
+4. View Doctors
+5. Book Appointment
+6. View Appointments
+7. Generate Bill
+8. Exit
 ```
-## 17. Data Storage and Configuration
 
-The application uses a local file named:
+## 14. Working of the System
+
+The working process of the application is as follows:
+
+1. Start the application.
+2. The system loads previously saved data if available.
+3. The main menu is displayed.
+4. The user selects an option.
+5. The system performs the selected operation.
+6. The entered information is validated.
+7. Records are displayed or saved according to the selected operation.
+8. The user can continue using the menu or exit the application.
+9. The application saves data locally when required.
+
+## 15. Data Storage
+
+The application uses local file handling to store data.
+
+The data is stored in the following file:
 
 ```text
-
 clinic_data.dat
-
-```
-This file is created automatically when data is saved.
-
-No external database or additional configuration file is required for the current version.
-
-The application does not require:
-
-Database username
-
-Database password
-
-API key
-
-External server
-
-Internet connection
-
-The project can be executed locally through PowerShell or Command Prompt.
-
-## 18. Testing
-The application was tested using the command line.
-
-The following test cases were performed:
-
-| Test Case | Expected Result | Actual Result | Status |
-
-| --------------------- | ------------------------------------ | ------------------------------------- | ------ |
-
-| Add Patient | Patient record should be added | Patient added successfully | Pass |
-
-| View Patients | Patient records should be displayed | Patient records displayed | Pass |
-
-| Search Patient | Matching patient should be found | Patient search performed successfully | Pass |
-
-| Update Patient | Patient details should be updated | Patient updated successfully | Pass |
-
-| Delete Patient | Patient record should be deleted | Patient deleted successfully | Pass |
-
-| Add Doctor | Doctor record should be added | Doctor added successfully | Pass |
-
-| View Doctors | Doctor records should be displayed | Doctor records displayed | Pass |
-
-| Search Doctor | Matching doctor should be found | Doctor search performed successfully | Pass |
-
-| Book Appointment | Appointment should be booked | Appointment booked successfully | Pass |
-
-| Duplicate Appointment | Duplicate booking should be rejected | Double-booking message displayed | Pass |
-
-| Cancel Appointment | Appointment status should change | Appointment cancelled successfully | Pass |
-
-| Generate Bill | Total bill should be calculated | Bill generated successfully | Pass |
-
-| View Bills | Bills should be displayed | Bills displayed successfully | Pass |
-
-| View Reports | Summary should be displayed | Reports displayed successfully | Pass |
-
-| Invalid Input | Error message should be displayed | Validation message displayed | Pass |
-
-| Save and Load Data | Data should be stored and loaded | Data saved and loaded successfully | Pass |
-
-## 19. Testing Evidence
-
-The testing was performed through PowerShell.
-
-The following screenshots can be added to the project report:
-
-Main menu and patient/doctor management
-
-Appointment booking and billing
-
-Reports output
-
-The screenshots are stored in the `screenshots` folder.
-
-## 20. Sample Test Data
-
-### Patient Details
-
-```text
-
-Patient Name: Rajnandini
-
-Age: 19
-
-Gender: Female
-
-Phone Number: 1234567891
-
-Health Problem: Memory loss
-
 ```
 
-### Doctor Details
+The application uses Java object serialization through:
 
-```text
+* `ObjectOutputStream`
+* `ObjectInputStream`
 
-Doctor Name: Dr. Amit
+No external database is required for the current version.
 
-Specialization: General Physician
+## 16. Testing
 
-Phone Number: 9876543210
+The application was tested through PowerShell and the terminal.
 
-```
+The following operations were checked:
 
-### Appointment Details
+| Test Case | Operation             | Expected Result                        | Status |
+| --------- | --------------------- | -------------------------------------- | ------ |
+| TC01      | Start the application | Main menu is displayed                 | Passed |
+| TC02      | Add Patient           | Patient details are added successfully | Passed |
+| TC03      | View Patients         | Patient records are displayed          | Passed |
+| TC04      | Add Doctor            | Doctor details are added successfully  | Passed |
+| TC05      | View Doctors          | Doctor records are displayed           | Passed |
+| TC06      | Book Appointment      | Appointment is created successfully    | Passed |
+| TC07      | View Appointments     | Appointment records are displayed      | Passed |
+| TC08      | Generate Bill         | Bill details are displayed             | Passed |
+| TC09      | Enter invalid input   | Error is handled properly              | Passed |
+| TC10      | Exit application      | Application closes successfully        | Passed |
 
-```text
+## 17. Sample Compilation Commands
 
-Patient ID: 1
-
-Doctor ID: 1
-
-Date: 2026-09-20
-
-Time: 10:30
-
-```
-
-### Billing Details
-```text
-
-Consultation Fee: 500
-
-Medicine Fee: 300
-
-Test Fee: 200
-
-Total Amount: 1000
-
-```
-## 21. Advantages
-Simple and easy-to-use console interface.
-
-Easy management of patient records.
-
-Easy management of doctor records.
-
-Helps organize appointments.
-
-Prevents double booking.
-
-Calculates the total bill automatically.
-
-Uses object-oriented programming concepts.
-
-Supports local data storage.
-
-Can be executed through the command line.
-
-Does not require an external database for the current version.
-
-## 22. Limitations
-The current version is console-based.
-
-It does not provide a browser-based website.
-
-It does not include online appointment booking.
-
-It does not include login or role-based access.
-
-It does not use a central database.
-
-It does not support multiple users at the same time.
-
-It is mainly designed for academic and small-scale use.
-
-## 23. Future Scope
-The project can be improved in the future by adding:
-
-Graphical User Interface.
-
-Web-based interface.
-
-MySQL database using JDBC.
-
-Login system for admin, doctor, and receptionist.
-
-Online appointment booking.
-
-Email or SMS appointment reminders.
-
-Advanced reports.
-
-Database backup.
-
-Multi-user support.
-
-Payment gateway integration.
-
-Patient medical history management.
-
-## 24. Conclusion
-The Clinic Appointment Management System was successfully developed using Java. The project provides basic features for managing patients, doctors, appointments, bills, and reports.
-The project demonstrates important Java concepts such as classes, objects, constructors, encapsulation, ArrayList, exception handling, file handling, loops, conditions, and date-time operations.
-The application can be compiled and executed through PowerShell or Command Prompt. It is simple, easy to understand, and suitable for demonstrating the practical use of Java programming concepts.
-
-## 25. Originality Statement
-This project has been developed for academic purposes. The source code, project structure, testing, and documentation should be reviewed and updated by the student before final submission.
-The student should add their own name, roll number, GitHub username, screenshots, and any additional changes made to the project.
-
-## 26. Author Details
-```text
-Name: Alabatte Rajnandini Raju
-Roll Number: 25BAI10125
-Course: Introduction to Java
-Course Code: CSE2006
-GitHub Username: alabatterajnandini
-```
-## 27. Repository Link
-After uploading the project to GitHub, add the public repository link below:
-```text
-https://github.com/YOUR-USERNAME/Clinic-Appointment-Management-System
-```
-The repository should be public and the link should point to the root of the repository.
-
-## 28. Submission Checklist
-
-Before submitting the project, check the following:
-
-[ ] GitHub repository is public.
-
-[ ] Repository name is correct.
-
-[ ] Root `README.md` file is present.
-
-[ ] Project description is included.
-
-[ ] Features are clearly mentioned.
-
-[ ] Technologies are mentioned.
-
-[ ] Requirements are mentioned.
-
-[ ] Setup instructions are included.
-
-[ ] Compilation command is included.
-
-[ ] Execution command is included.
-
-[ ] Project files are uploaded.
-
-[ ] Source code is present inside the `src` folder.
-
-[ ] Testing has been performed.
-
-[ ] Testing screenshots are added.
-
-[ ] Project report is prepared.
-
-[ ] Student name and roll number are added.
-
-[ ] GitHub repository URL is correct.
-
-[ ] No `/tree/main` or `/blob/main` is added to the submitted root URL.
-
-[ ] The project is original and reviewed before submission.
-
-# 29. How to Run the Project Quickly
+Compile the project using:
 
 ```powershell
-
-javac -d out (Get-ChildItem src -Filter .java).FullName
-
-java -cp out Main
-
+javac -d out *.java
 ```
-## 30. End of README
 
+Run the project using:
 
+```powershell
+java -cp out Main
+```
 
-Thank you.
+## 18. Advantages
+
+* Easy to use.
+* Simple menu-driven interface.
+* Reduces manual record management.
+* Demonstrates practical Java programming.
+* Uses Object-Oriented Programming concepts.
+* Supports local data storage.
+* Does not require an external database.
+* Suitable for small-scale clinic management demonstration.
+
+## 19. Limitations
+
+* The application is console-based.
+* It does not have a graphical user interface.
+* It does not provide online appointment booking.
+* It does not use a cloud database.
+* It does not include online payment integration.
+* It does not include login and authentication.
+* The current version is designed for academic demonstration.
+
+## 20. Future Scope
+
+The project can be improved in the future by adding:
+
+* Graphical User Interface using Java Swing or JavaFX.
+* Database connectivity using JDBC and MySQL.
+* Login and authentication.
+* Online appointment booking.
+* Appointment cancellation and rescheduling.
+* Email or SMS notifications.
+* Doctor availability management.
+* Advanced reports.
+* Online payment integration.
+* Web-based clinic management system.
+
+## 21. Conclusion
+
+The Clinic Appointment Management System successfully demonstrates the use of Core Java concepts in a practical application.
+
+The system manages basic patient, doctor, appointment, and billing activities through a console-based interface. It uses classes, objects, collections, exception handling, file handling, and date-time concepts.
+
+This project helped in understanding how Java programming concepts can be combined to develop a useful real-world application.
+
+## 22. How to Use This Repository
+
+1. Download or clone this repository.
+2. Open the project root folder.
+3. Make sure Java JDK is installed.
+4. Compile the project using:
+
+```powershell
+javac -d out *.java
+```
+
+5. Run the project using:
+
+```powershell
+java -cp out Main
+```
+
+6. Follow the menu instructions displayed in the terminal.
+
+## 23. Author
+
+**Name:** Alabatte Rajnandini Raju
+
+**Project Title:** Clinic Appointment Management System
+
+**Subject:** Introduction to Java
+
+**Repository:**
+`https://github.com/alabatterajnandini/Clinic-Appointment-Management-System`

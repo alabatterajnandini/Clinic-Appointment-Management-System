@@ -374,13 +374,41 @@ Project Title: Clinic Appointment Management System
 
 Subject: Introduction to Java
 
-## 24. Testing Screenshots
-
-![Uploading Screenshot 2026-09-17 230143.png…]()
-<img width="1535" height="773" alt="Screenshot 2026-09-17 230159" src="https://github.com/user-attachments/assets/7b50f6af-4c7d-4fac-ae91-1960787fe18d" />
-
-
-
-
 Repository:
 `https://github.com/alabatterajnandini/Clinic-Appointment-Management-System`
+
+## 24. Testing Screenshots
+
+<img width="1535" height="766" alt="Screenshot 2026-09-17 230143" src="https://github.com/user-attachments/assets/f5aa7676-3df1-44ff-908c-f42f074945b6" />
+
+<img width="1535" height="773" alt="Screenshot 2026-09-17 230159" src="https://github.com/user-attachments/assets/7b50f6af-4c7d-4fac-ae91-1960787fe18d" />
+
+<img width="1535" height="787" alt="Screenshot 2026-09-17 230602" src="https://github.com/user-attachments/assets/931b8156-ee98-4d1a-9211-0c04a6559801" />
+
+<img width="1535" height="782" alt="Screenshot 2026-09-17 230701" src="https://github.com/user-attachments/assets/ce9d9083-0d86-49e1-a5f7-548cb45ea6f9" />
+
+<img width="751" height="773" alt="Screenshot 2026-09-17 230941" src="https://github.com/user-attachments/assets/5a8ddc1e-0ad4-4b58-be21-ce138979a926" />
+
+<img width="882" height="770" alt="Screenshot 2026-09-17 231449" src="https://github.com/user-attachments/assets/675b8d85-b930-4dfe-b977-5fbd75941425" />
+
+<img width="533" height="758" alt="Screenshot 2026-09-17 231510" src="https://github.com/user-attachments/assets/db319daa-a6b8-4f26-9a12-fa0b17c44787" />
+
+<img width="588" height="753" alt="Screenshot 2026-09-17 231522" src="https://github.com/user-attachments/assets/2a5058fd-d6e0-45d6-b2c2-517ee4166996" />
+
+<img width="1078" height="760" alt="Screenshot 2026-09-17 231536" src="https://github.com/user-attachments/assets/4ebb2bdf-3152-4fce-887b-373994a280aa" />
+
+<img width="1228" height="782" alt="Screenshot 2026-09-17 231600" src="https://github.com/user-attachments/assets/85e8ffd4-cf83-4767-b26e-6804c0879086" />
+
+<img width="1070" height="780" alt="Screenshot 2026-09-17 231624" src="https://github.com/user-attachments/assets/14bd877e-a052-47ec-be87-db81680272dd" />
+
+<img width="1202" height="767" alt="Screenshot 2026-09-17 231801" src="https://github.com/user-attachments/assets/98657b3f-bc68-480f-83bc-8c9db30d31ee" />
+
+<img width="973" height="782" alt="Screenshot 2026-09-18 114128" src="https://github.com/user-attachments/assets/735c01d6-fa38-4da6-a677-774424be12b1" />
+
+<img width="1127" height="762" alt="Screenshot 2026-09-18 114141" src="https://github.com/user-attachments/assets/8094a0e1-30a0-456e-96af-f4a67a38c05b" />
+
+<img width="1132" height="740" alt="Screenshot 2026-09-18 114158" src="https://github.com/user-attachments/assets/756b81ce-48ee-4aa3-9f33-4a96ad81f90f" />
+
+<img width="1102" height="766" alt="Screenshot 2026-09-18 114215" src="https://github.com/user-attachments/assets/8456c7d3-71e2-4379-bc57-759e27b5d657" />
+
+<img width="1087" height="517" alt="Screenshot 2026-09-18 114237" src="https://github.com/user-attachments/assets/64f1bd97-2d4a-4569-b3d3-ab411d966ae9" />

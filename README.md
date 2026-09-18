@@ -381,16 +381,20 @@ src
 
 ## 14. Compilation Instructions
 
-Run the following command in PowerShell:
+### Step 1: Open PowerShell or Windows Terminal
+
+Open PowerShell or Windows Terminal on your computer.
+
+### Step 2: Navigate to the Project Folder
+
+Open the folder where the project is extracted.
+
+Example:
 
 ```powershell
+cd "C:\Users\YourName\Downloads\Clinic-Appointment-Management-System\Clinic-Appointment-Management-System"
 
-javac -d out (Get-ChildItem src -Filter .java).FullName
-
-```
-This command compiles all Java files and stores the generated `.class` files inside the `out` folder.
-
-## 15. Execution Instructions
+### 15. Execution Instructions
 
 After successful compilation, run:
 

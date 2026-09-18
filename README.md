@@ -374,5 +374,13 @@ Project Title: Clinic Appointment Management System
 
 Subject: Introduction to Java
 
+## 24. Testing Screenshots
+
+![Uploading Screenshot 2026-09-17 230143.png…]()
+<img width="1535" height="773" alt="Screenshot 2026-09-17 230159" src="https://github.com/user-attachments/assets/7b50f6af-4c7d-4fac-ae91-1960787fe18d" />
+
+
+
+
 Repository:
 `https://github.com/alabatterajnandini/Clinic-Appointment-Management-System`
